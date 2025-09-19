@@ -14,7 +14,7 @@
 
 <body>
   <header class="header">
-    <div class="header__inner">
+    <div class="container">
       <h1 class="header__logo">
         <a href="#">
           <img src="img/logo.png" alt="#">
@@ -53,14 +53,14 @@
   </header>
   <main>
     <div class="mv">
-      <div class="mv__inner">
+      <div class="container">
         <h2>あなたは知ってる？<br>
           蓼科を丸ごと味わう<br>
           喜びを</h2>
       </div>
     </div>
     <section class="about">
-      <div class="about__inner">
+      <div class="container">
         <h2 class="about__ttl">蓼科の生きた豊かな恵みをそのままに</h2>
         <figure class="about__fig">
           <img src="img/about-01.jpg" alt="#">
@@ -76,7 +76,7 @@
       </div>
     </section>
     <section class="product">
-      <div class="product__inner">
+      <div class="container">
         <h2 class="product__ttl">製品一覧</h2>
         <ul class="product__list">
           <li class="product__item">
@@ -137,7 +137,7 @@
       </div>
     </section>
     <section class="news">
-      <div class="news__inner">
+      <div class="container">
         <h2 class="news__ttl">お知らせ</h2>
         <ul class="news__list">
           <li class="news__item">
@@ -160,10 +160,10 @@
       </div>
     </section>
     <section class="faq">
-      <div class="faq__inner">
-        <picture>
+      <div class="container">
+        <!-- <picture>
           <img src="img/grapes-middle.jpg" alt="#">
-        </picture>
+        </picture> -->
         <h2 class="faq__ttl">FAQ</h2>
         <div class="faq__area">
           <details class="">
@@ -192,10 +192,10 @@
       </div>
     </section>
     <section class="access">
-      <div class="access__inner">
-        <picture>
+      <div class="container">
+        <!-- <picture>
           <img src="img/breakfast-middle.jpg" alt="#">
-        </picture>
+        </picture> -->
         <h2 class="access__ttl">アクセス</h2>
         <div class="access__cont">
           <div class="access__map">
@@ -205,29 +205,119 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="access__text">
-            <table>
-              <tr>
-                <td>会社名</td>
-                <td>蓼科ごとう農園</td>
-              </tr>
-              <tr>
-                <td>代表者名</td>
-                <td>後藤 優香</td>
-              </tr>
-              <tr>
-                <td>所在地</td>
-                <td>長野県茅野市北山×××××</td>
-              </tr>
-              <tr>
-                <td>E-mail</td>
-                <td>蓼科ごとう農園</td>
-              </tr>
-            </table>
+            <ul class="access__list">
+              <li class="access__item">
+                <p>会社名</p>
+                <p>蓼科ごとう農園</p>
+              </li>
+              <li class="access__item">
+                <p>代表者名</p>
+                <p>後藤 優香</p>
+              </li>
+              <li class="access__item">
+                <p>所在地</p>
+                <p>長野県茅野市北山×××××</p>
+              </li>
+              <li class="access__item" r>
+                <p>E-mail</p>
+                <p>tateshina-goto@gmail.com</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
+    <section class="contact">
+      <div class="container">
+        <h2 class="contact__ttl">お問い合わせ</h2>
+        <p>ご購入・販売に関しましては、下記よりお気軽にお問い合わせください。</p>
+        <div class="contact__form">
+          <h3 class="contact__formTtl">お問い合わせメールフォーム</h3>
+          <form action="#">
+            <div class="contact__formInner">
+              <div class="contact__formGroup">
+                <label for="name">
+                  お名前
+                  <span class="contact__mark">必須</span>
+                </label>
+                <input type="text" name="your-name">
+              </div>
+              <div class="contact__formGroup">
+                <label for="post">
+                  郵便番号
+                </label>
+                <input type="text" name="your-post">
+              </div>
+              <div class="contact__formGroup">
+                <label for="address">
+                  ご住所
+                  <span class="contact__mark">必須</span>
+                </label>
+                <input type="text" name="your-address">
+              </div>
+              <div class="contact__formGroup">
+                <label for="email">
+                  メールアドレス
+                  <span class="contact__mark">必須</span>
+                </label>
+                <input type="text" name="your-email">
+              </div>
+              <div class="contact__formGroup">
+                <label for="tel">
+                  電話番号
+                  <span class="contact__mark">必須</span>
+                </label>
+                <input type="tel" name="your-tel">
+              </div>
+              <div class="contact__formGroup">
+                <label for="comment">
+                  お問い合わせ内容
+                  <span class="contact__mark">必須</span>
+                </label>
+                <textarea name="comment"></textarea>
+              </div>
+              <div class="contact__formGroup">
+                <div class="contact__formBtn">
+                  <input type="submit" name="submit" value="送信する">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+    </section>
   </main>
+  <footer>
+    <div class="container">
+      <div class="footer__logo">
+        <img src="img/logo.png" alt="#">
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#">この農園について</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">製品一覧</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">お知らせ</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">FAQ</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">アクセス</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copy">©︎ 2019 GOTONOUEN.</div>
+    </div>
+  </footer>
 </body>
 
 </html>
