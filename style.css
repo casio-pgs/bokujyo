@@ -1,1 +1,56 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #4E301B;
+}
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background: #FDF9EF;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo img {
+  width: 270px;
+  height: 170px;
+  position: absolute;
+  top: 627px;
+  left: auto;
+  right: auto;
+}
+
+
+
+
+
+
+
+
+
+.mv {
+  background-image: url(img/fv.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  height: 177vw;
+}
+
+.mv .container {
+  position: relative;
+}
+
+.h2 {
+  position: absolute;
+  top: 423px;
+  left: 33px;
+  background: #fff;
+}

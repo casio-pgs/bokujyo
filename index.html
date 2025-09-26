@@ -8,6 +8,9 @@
   <title>長野県茅野市の農園 | 蓼科ごとう農園</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="script.js"></script>
 </head>
@@ -201,7 +204,7 @@
           <div class="access__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103271.42912546259!2d138.24310125!3d36.01462375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c4fe3a25c43d7%3A0x3b95b26d7026e048!2z6ZW36YeO55yM6IyF6YeO5biC!5e0!3m2!1sja!2sjp!4v1757326740072!5m2!1sja!2sjp"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="access__text">
@@ -234,7 +237,57 @@
         <div class="contact__form">
           <h3 class="contact__formTtl">お問い合わせメールフォーム</h3>
           <form action="#">
-            <div class="contact__formInner">
+            <table class="contact__table">
+              <tr>
+                <th>
+                  <div class="inputLabel">お問い合わせ種類
+                    <span>必須</span>
+                  </div>
+                </th>
+                <td>
+                  <div class="inputField">
+                    <ul class="radioList">
+                      <li>
+                        <label>
+                          <input type="radio" name="attribute" value="弊社製品について" checked required>
+                          <span>弊社製品について</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="attribute" value="いちご狩りについて" required>
+                          <span>いちご狩りについて</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="attribute" value="その他のお問い合わせ" required>
+                          <span>その他のお問い合わせ</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <div class="inputlabel">
+                    お名前
+                    <span class="require">必須</span>
+                  </div>
+                </th>
+                <td>
+                  <div class="nameLayout">
+                    <div class="inputField">
+                      <label for="name">お名前</label>
+                      <input type="text" name="name" required>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <!-- <div class="contact__formInner">
               <div class="contact__formGroup">
                 <label for="name">
                   お名前
@@ -281,7 +334,7 @@
                   <input type="submit" name="submit" value="送信する">
                 </div>
               </div>
-            </div>
+            </div> -->
           </form>
         </div>
       </div>
